@@ -1,13 +1,10 @@
 1.选择机架
 选择x型四旋翼
 
-\`\`\`diff
-+ 这段文本将是黄色的
-\`\`\`
 2.校准传感器
 罗盘，陀螺仪，加速度计，校准地平线
 其中方向都是none
-
+ ```diff + this will be highlighted in green - this will be highlighted in red ``` 
 3.校准遥控器
 提前对好频，美国手，照着打完摇杆，直到出现侧面那两个就结束了点下一步。
 <span style="color: green"> Some green text </span> 
