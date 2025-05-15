@@ -4,10 +4,10 @@
 2.校准传感器
 罗盘，陀螺仪，加速度计，校准地平线
 其中方向都是none
- ```diff + this will be highlighted in green - this will be highlighted in red ``` 
+
 3.校准遥控器
 提前对好频，美国手，照着打完摇杆，直到出现侧面那两个就结束了点下一步。
-<span style="color: green"> Some green text </span> 
+
 4.飞行模式
 一般是1.自稳（stabilized），2定高（altitude），3定点（position）/offboard
 offboard可以在右边单独设置一个通道
@@ -26,6 +26,19 @@ Altitude（定高）
 高度模式是新手最安全的非GPS手动模式。 就像姿态模式一样，但它能在松开操纵杆时还可以维持无人机的高度（油门杆需在中位）。
 
 5.校准电调
+空电：3.5   满电：4.2.
+注意：电机节目是否健全。  不健全的话 去把参数SYS_CTRL_ALLOC设置为enable
 
+CBRK_SUPPLY_CHK
+这个参数是检查解锁时是否有电池供电，默认是需要插电流计供电才可以解锁。如果想通过其他方式（如ESC供电）给飞控供电进行解锁，则需要设置该参数为894281。
+CBRK_USB_CHK
+这个参数是检查起飞时是否有USB连接，默认情况下有USB连接时是无法解锁的，如果需要插USB解锁，需要设置为197848
+飞控解锁不了一般修改COM_ARM_...这些参数。如果陀螺仪出现类似报错COM_ARM_IMU_ACC改大一些；如果罗盘报某个没度数的参数，可以把COM_ARM_MAG_ANG设为-1。
+
+6.校准电机
+
+12逆时针 34 顺时针
+注意电机方向及，电机位置，这次是1423  。
+900  1100  2000
 
 
